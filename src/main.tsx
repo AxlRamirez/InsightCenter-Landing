@@ -8,6 +8,7 @@ import './styles/animations.css'
 import './styles/header.css'
 import './styles/hero.css'
 import './styles/problem.css'
+import './styles/process.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
