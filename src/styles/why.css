@@ -1,0 +1,330 @@
+.why {
+  position: relative;
+  padding-block: clamp(72px, 10vh, 120px) clamp(88px, 12vh, 140px);
+  color: var(--color-text-primary);
+  background:
+    linear-gradient(
+      180deg,
+      #e7eef6 0%,
+      var(--color-canvas) 16%,
+      var(--color-canvas) 100%
+    );
+}
+
+.why__inner {
+  display: grid;
+  gap: clamp(48px, 7vh, 88px);
+}
+
+.why__intro {
+  max-width: 46rem;
+}
+
+.why__eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-blue-600);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.why__title {
+  color: var(--color-text-primary);
+  font-size: clamp(1.85rem, 1.2rem + 1.35vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.why__lead {
+  max-width: 40rem;
+  margin-top: 18px;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 0.96rem + 0.16vw, 1.08rem);
+  line-height: 1.65;
+}
+
+.why__statement {
+  margin: 0;
+  max-width: 52rem;
+  padding-block: clamp(8px, 1.5vh, 16px);
+  border-top: 1px solid rgba(16, 38, 66, 0.12);
+  border-bottom: 1px solid rgba(16, 38, 66, 0.12);
+}
+
+.why__statement p {
+  color: var(--color-text-primary);
+  font-size: clamp(1.35rem, 1.05rem + 0.9vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.why__statement span {
+  color: var(--color-navy-800);
+}
+
+.why__bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(20px, 3vw, 40px);
+  min-width: 0;
+}
+
+.why__bridge-col {
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.why__bridge-label {
+  margin-bottom: 16px;
+  color: var(--color-blue-600);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.why__bridge-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why__bridge-col li {
+  padding-block: 11px;
+  color: var(--color-text-primary);
+  border-bottom: 1px solid rgba(16, 38, 66, 0.1);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.why__bridge-col li:first-child {
+  border-top: 1px solid rgba(16, 38, 66, 0.1);
+}
+
+.why__bridge-col--accent li {
+  color: var(--color-navy-800);
+}
+
+.why__bridge-mid {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 14px;
+  padding-inline: 4px;
+}
+
+.why__bridge-line {
+  width: 1px;
+  height: 48px;
+  background: rgba(20, 115, 230, 0.28);
+}
+
+.why__bridge-mark {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--color-blue-600);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.why__principles {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(16, 38, 66, 0.12);
+}
+
+.why__principle {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(18px, 2.5vw, 28px);
+  max-width: 40rem;
+  padding-block: clamp(28px, 4vh, 40px);
+  border-bottom: 1px solid rgba(16, 38, 66, 0.1);
+}
+
+.why__principle--alt {
+  margin-left: auto;
+  max-width: 42rem;
+}
+
+.why__principle-index {
+  color: var(--color-blue-600);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.why__principle-body {
+  min-width: 0;
+}
+
+.why__principle h3 {
+  color: var(--color-text-primary);
+  font-size: clamp(1.15rem, 1.05rem + 0.35vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.why__principle p {
+  margin-top: 10px;
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.why__audiences {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(32px, 5vw, 72px);
+  padding-top: clamp(8px, 2vh, 18px);
+  border-top: 1px solid rgba(16, 38, 66, 0.12);
+}
+
+.why__audience h3 {
+  margin-bottom: 18px;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.why__audience ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why__audience li {
+  position: relative;
+  padding: 12px 0 12px 18px;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid rgba(16, 38, 66, 0.08);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.why__audience li::before {
+  content: "";
+  position: absolute;
+  top: 1.15em;
+  left: 0;
+  width: 6px;
+  height: 1px;
+  background: var(--color-blue-600);
+}
+
+.why__audience li:first-child {
+  border-top: 1px solid rgba(16, 38, 66, 0.08);
+}
+
+/* Reveal */
+
+.why__intro,
+.why__statement,
+.why__bridge,
+.why__principle,
+.why__audiences {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 680ms var(--ease-out),
+    transform 680ms var(--ease-out);
+}
+
+.why.is-inview .why__intro {
+  opacity: 1;
+  transform: none;
+}
+
+.why.is-inview .why__statement {
+  opacity: 1;
+  transform: none;
+  transition-delay: 100ms;
+}
+
+.why.is-inview .why__bridge {
+  opacity: 1;
+  transform: none;
+  transition-delay: 180ms;
+}
+
+.why.is-inview .why__principle {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(260ms + (var(--i) * 90ms));
+}
+
+.why.is-inview .why__audiences {
+  opacity: 1;
+  transform: none;
+  transition-delay: 620ms;
+}
+
+@media (max-width: 900px) {
+  .why__bridge {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .why__bridge-mid {
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .why__bridge-line {
+    width: 28px;
+    height: 1px;
+  }
+
+  .why__bridge-mark {
+    writing-mode: horizontal-tb;
+    transform: none;
+    letter-spacing: 0.08em;
+  }
+
+  .why__principle,
+  .why__principle--alt {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .why__audiences {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 560px) {
+  .why__principle {
+    gap: 14px;
+  }
+
+  .why__statement p {
+    font-size: clamp(1.2rem, 1.05rem + 1.4vw, 1.45rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why__intro,
+  .why__statement,
+  .why__bridge,
+  .why__principle,
+  .why__audiences {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
