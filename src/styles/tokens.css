@@ -9,6 +9,11 @@
   --color-blue-300: #8ec4ff;
 
   --color-white: #ffffff;
+  --color-canvas: #f3f6fa;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #0a1830;
+  --color-text-secondary: #4d607a;
   --color-text-on-dark: #f4f7fb;
   --color-text-muted: #c5d3e6;
   --color-text-quiet: #93a8c4;

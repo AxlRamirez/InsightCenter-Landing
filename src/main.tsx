@@ -7,6 +7,7 @@ import './styles/global.css'
 import './styles/animations.css'
 import './styles/header.css'
 import './styles/hero.css'
+import './styles/problem.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
