@@ -1,0 +1,65 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-enter {
+  animation: fade-in 600ms var(--ease-out) both;
+}
+
+.rise {
+  animation: rise-in var(--duration) var(--ease-out) both;
+}
+
+.rise-1 {
+  animation-delay: 40ms;
+}
+
+.rise-2 {
+  animation-delay: 120ms;
+}
+
+.rise-3 {
+  animation-delay: 200ms;
+}
+
+.rise-4 {
+  animation-delay: 280ms;
+}
+
+.rise-5 {
+  animation-delay: 360ms;
+}
+
+.showcase-enter {
+  animation: rise-in 780ms var(--ease-out) 160ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .header-enter,
+  .rise,
+  .showcase-enter {
+    animation: none;
+  }
+}

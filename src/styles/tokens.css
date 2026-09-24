@@ -1,0 +1,43 @@
+:root {
+  --color-navy-950: #07111f;
+  --color-navy-900: #0b1830;
+  --color-navy-850: #10213c;
+  --color-navy-800: #163056;
+
+  --color-blue-600: #1473e6;
+  --color-blue-500: #2b8cff;
+  --color-blue-300: #8ec4ff;
+
+  --color-white: #ffffff;
+  --color-text-on-dark: #f4f7fb;
+  --color-text-muted: #c5d3e6;
+  --color-text-quiet: #93a8c4;
+
+  --color-line: rgba(186, 210, 240, 0.16);
+  --color-line-strong: rgba(186, 210, 240, 0.28);
+
+  --color-whatsapp: #1ebe5d;
+  --color-whatsapp-hover: #17a851;
+
+  --font-sans:
+    "Segoe UI Variable",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  --container: 1240px;
+  --gutter: clamp(20px, 3.2vw, 40px);
+  --header-height: 72px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-frame:
+    0 24px 50px rgba(2, 8, 20, 0.28);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 680ms;
+}
