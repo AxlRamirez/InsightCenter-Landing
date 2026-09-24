@@ -10,6 +10,7 @@ import './styles/hero.css'
 import './styles/problem.css'
 import './styles/process.css'
 import './styles/why.css'
+import './styles/closing.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

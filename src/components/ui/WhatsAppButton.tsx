@@ -11,13 +11,14 @@ export function WhatsAppButton({
   compact = false,
 }: WhatsAppButtonProps) {
   const href = getWhatsAppUrl()
+  const isExternal = href.startsWith('https://')
 
   return (
     <a
       className={`whatsapp-button${compact ? ' whatsapp-button--compact' : ''}`}
       href={href}
-      target={href.startsWith('http') ? '_blank' : undefined}
-      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       aria-label={label}
     >
       <MessageCircle size={compact ? 18 : 20} strokeWidth={2} />
